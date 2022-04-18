@@ -1,0 +1,716 @@
+/*preloader section */
+.preloader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 100000;
+    background-color: white;
+    top: 0;
+    display: flex;
+    align-items: center;
+  }
+  .loading {
+    animation: spin 3s ease;
+    transition: all;
+    width: 150px;
+    margin: 0 auto;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(720deg);
+    }
+  }
+  
+.body {
+    font-family: 'Heebo', sans-serif;
+}
+/*header */
+
+.navigation {
+    display: flex;
+}
+
+.logoMenu {
+    display:inline-block;
+    vertical-align:middle;
+    font-family: 'Montserrat', sans-serif;
+    font-size:130%;
+    padding-right:3%;
+    text-align:right;
+}
+.inline-block {
+    display:inline-block;
+    vertical-align:middle;
+    font-family: 'Montserrat', sans-serif;
+    font-size:130%;
+    padding-right:3%;
+    text-align:right;
+}
+
+.logo {
+    width:50%;
+    padding-left:20%;
+    padding-bottom:1%;
+    float:left;
+    margin-left:20%;
+}
+
+nav {
+    width:73%;
+    padding-top:3%;
+    padding:1%
+}
+
+menu {
+    width:100%;
+    justify-content: right;
+}
+
+
+/*top navigation */
+.topnav {
+    overflow: hidden;
+  }
+  
+  /*links inside the navigation bar */
+  .topnav a {
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+/*NAVIGATION JQUERY*/
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  position: relative;
+}
+
+nav ul li a {
+  color: rgb(0, 0, 0);
+  display: block;
+  font-size: 35px;
+  padding: 15px 14px;
+  transition: 0.3s linear;
+  text-decoration: none;
+}
+
+nav ul li.workNav:hover { 
+  background: #ADE2DC; 
+  border-top-left-radius: 15%;
+  border-top-right-radius: 15%;
+  border-bottom-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+}
+
+nav ul li.aboutNav:hover { 
+  background: #F7B9B8; 
+  border-top-left-radius: 15%;
+  border-top-right-radius: 15%;
+  border-bottom-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+}
+
+nav ul li.resumeNav:hover { 
+  background: #F7D986; 
+  border-top-left-radius: 15%;
+  border-top-right-radius: 15%;
+  border-bottom-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+}
+
+nav ul li.contactNav:hover { 
+  background: #F7B9B8; 
+  border-top-left-radius: 15%;
+  border-top-right-radius: 15%;
+  border-bottom-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+}
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  width: 250px;
+}
+
+nav ul li ul li {
+  display: block;
+}
+
+nav ul li ul li:first-child { border-top: none; }
+
+nav ul li ul li a {
+  display: block;
+  padding: 10px 14px;
+  text-align: left;
+}
+
+.tittle {
+  font-size: 20px;
+}
+
+.submenuBlue {
+  background: #F5FCFB;
+  border-top-right-radius: 8%;
+  border-bottom-left-radius: 8%;
+  border-bottom-right-radius: 8%;
+}
+
+.submenuBlue a:hover {
+  background: #ADE2DC;
+  border-top-right-radius: 8%;
+  border-bottom-left-radius: 8%;
+  border-bottom-right-radius: 8%;
+}
+
+.submenuPink {
+  background: #FCF6F7;
+  border-top-right-radius: 8%;
+  border-bottom-left-radius: 8%;
+  border-bottom-right-radius: 8%;
+}
+.submenuPink a:hover {
+  background: #F0D4D6;
+  border-top-right-radius: 8%;
+  border-bottom-left-radius: 8%;
+  border-bottom-right-radius: 8%;
+}
+.submenuYellow {
+  background: #FFFCF3;
+  border-top-right-radius: 8%;
+  border-bottom-left-radius: 8%;
+  border-bottom-right-radius: 8%;
+}
+.submenuYellow a:hover {
+  background: #F7D986;
+  border-top-right-radius: 8%;
+  border-bottom-left-radius: 8%;
+  border-bottom-right-radius: 8%;
+}
+.submenuDarkpink {
+  background: #FEF5F5;
+  border-top-right-radius: 8%;
+  border-bottom-left-radius: 8%;
+  border-bottom-right-radius: 8%;
+}
+
+.submenuDarkpink a:hover {
+  background: #F7B9B8;
+  border-top-right-radius: 8%;
+  border-bottom-left-radius: 8%;
+  border-bottom-right-radius: 8%;
+}
+
+  /*END NAVIGATION JQUERY*/
+
+
+/*hero section  */
+
+.heroImg {
+    height: 100%;
+    padding: 5%;
+    padding-bottom: 20%;
+    background-color: #CEEEEA;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 400%;
+    text-align: left;
+}
+
+h1 {
+    font-weight: normal;
+    margin-bottom: 2%;
+}
+
+.right {
+    float:right;
+    padding-left:5;
+    margin-right: 10%;
+    margin-left: 5%;
+}
+
+button.download {
+    background-color: #F5A7A6;
+    border-color: #F5A7A6;
+    color: black;
+    float:left;
+    font-family: 'Heebo', sans-serif;
+    font-weight:300px;
+    font-size:40%;
+    border-radius: 60px;
+    padding:15px;
+    margin-top: 5%;
+}
+
+.download:hover {
+    background-color: #F8EAEB;
+    color: black;
+    border-color: #F8EAEB;
+    border-radius: 60px;
+    box-shadow: 5px 5px rgb(245,167,166,0.7);
+  }
+  
+
+/*WORK SECTION*/
+
+h2 {
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    margin-left:10%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-size:300%;
+}
+
+h3 {
+    font-weight: 400;
+    font-family: 'Heebo', sans-serif;  
+}
+
+.parentContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.flexChild {
+    display:flex-row;
+    font-family: 'Heebo', sans-serif;
+    text-align: center;
+    font-size:220%;
+    vertical-align:top;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: 3%;
+}
+
+.workPictures {
+    width: 90%;
+}
+
+/*SKILL SECTION*/
+.skillsSection {
+    width: 100%;
+}
+
+.skillsRectangles {
+    text-align: center;
+    justify-content: center;
+    left: 0;
+    right: 0;
+}
+
+.rectangle {
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    background: #F8E7E8;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-bottom:25px;
+    border-color: #F8E7E8;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:300px;
+    font-size:180%;
+    border-radius: 60px;
+    width: 200px;
+    height: 10px;
+}
+
+.recSoftware {
+    background: #F8E7E8;
+    animation: recColor1 12s infinite;
+    animation-timing-function: linear;
+  }
+
+  .recSoftskills {
+    background: #F8E7E8;
+    animation: recColor2 12s infinite;
+    animation-timing-function: linear;
+  }
+
+  .recLanguage {
+    background: #F8E7E8;
+    animation: recColor3 12s infinite;
+    animation-timing-function: linear;
+  }
+
+  @keyframes recColor1 {
+    from {
+        background: #ffffff;
+    }
+    10% {
+        background: #C6EBE7;
+    }
+    35% {
+        background: #ffffff;
+    }
+    40% {
+        background: #ffffff;
+    }
+    65% {
+        background: #ffffff;
+    }
+    70% {   
+        background: #ffffff;
+    }
+    95% {
+        background: #ffffff;
+    }
+    to {
+        background: #ffffff;
+    }
+  }
+
+
+  @keyframes recColor2 {
+    from {
+        background: #ffffff;
+    }
+    10% {
+        background: #ffffff;
+    }
+    35% {
+        background: #ffffff;
+    }
+    40% {
+        background: #F5A7A6;
+    }
+    65% {
+        background: #ffffff;
+    }
+    70% {   
+        background: #ffffff;
+    }
+    95% {
+        background: #ffffff;
+    }
+    to {
+        background: #ffffff;
+    }
+  }
+
+
+  @keyframes recColor3 {
+    from {
+        background: #ffffff;
+    }
+    10% {
+        background: #ffffff;
+    }
+    35% {
+        background: #ffffff;
+    }
+    40% {
+        background: #ffffff;
+    }
+    65% {
+        background: #ffffff;
+    }
+    70% {   
+        background: #F7DF99;
+    }
+    95% {
+        background: #ffffff;
+    }
+    to {
+        background: #ffffff;
+    }
+  }
+
+.containerGrid {
+    margin: 0px 11%;
+    margin-bottom: 10%;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "reliable figma illustrator helpful french organized"
+    "trello spanish english creative miro efficient"
+    ;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:300px;
+    font-size:100%;
+    color: #000000;
+    text-align: center;
+    padding:15px;
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-top: 30%;
+  }
+
+  .software {
+    background: #F8E7E8;
+    animation: circleColor1 12s infinite;
+    animation-timing-function: linear;
+  }
+
+  .softskills {
+    background: #F8E7E8;
+    animation: circleColor2 12s infinite;
+    animation-timing-function: linear;
+  }
+
+  .language {
+    background: #F8E7E8;
+    animation: circleColor3 12s infinite;
+    animation-timing-function: linear;
+  }
+
+  @keyframes circleColor1 {
+    from {
+        background: #F9EEEF;
+    }
+    10% {
+        background: #C6EBE7;
+    }
+    35% {
+        background: #F9EEEF;
+    }
+    40% {
+        background: #F9EEEF;
+    }
+    65% {
+        background: #F9EEEF;
+    }
+    70% {   
+        background: #F9EEEF;
+    }
+    95% {
+        background: #F9EEEF;
+    }
+    to {
+        background: #F9EEEF;
+    }
+  }
+
+
+  @keyframes circleColor2 {
+    from {
+        background: #F9EEEF;
+    }
+    10% {
+        background: #F9EEEF;
+    }
+    35% {
+        background: #F9EEEF;
+    }
+    40% {
+        background: #F5A7A6;
+    }
+    65% {
+        background: #F9EEEF;
+    }
+    70% {   
+        background: #F9EEEF;
+    }
+    95% {
+        background: #F9EEEF;
+    }
+    to {
+        background: #F9EEEF;
+    }
+  }
+
+
+  @keyframes circleColor3 {
+    from {
+        background: #F9EEEF;
+    }
+    10% {
+        background: #F9EEEF;
+    }
+    35% {
+        background: #F9EEEF;
+    }
+    40% {
+        background: #F9EEEF;
+    }
+    65% {
+        background: #F9EEEF;
+    }
+    70% {   
+        background: #F7DF99;
+    }
+    95% {
+        background: #F9EEEF;
+    }
+    to {
+        background: #F9EEEF;
+    }
+  }
+
+/*footer section */
+
+footer {
+    background-color: #CEEEEA;
+    height:20%;
+    margin-top: 5%;
+}
+
+.social {
+    list-style: none;
+    display:inline-flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footerBlock {
+    padding: 2%;
+    align-items: center;
+}
+
+/*Responsive Design section */
+/*Navigation */
+@media only screen and (max-width: 600px) {
+    .navigation {
+        width:100%;
+        font-size: 110%;
+    }
+    .logo {
+      width:60%;
+      float: left;
+      padding:1%;
+      margin-left:0%;
+      margin-top: 10%;
+    }
+
+    .inline-block {
+      font-size:100%;
+      display: flex;
+      flex-direction: column;
+      padding-right: 5%;
+      padding-left: 5%;
+    }
+}
+/*Hero section */
+@media only screen and (max-width: 600px) {
+    .heroImg {
+        height: 100%;
+        width:90%;
+    }
+
+    .right {
+        float: none;
+        width: 80%;
+        justify-content: center;
+    }
+    h1 {
+        margin-top: 2%;
+        font-size:60%;
+    }
+    .heroText {
+        font-size:40%;
+    }
+    button.download {
+        font-size:30%;
+        border-radius: 60px;
+        padding:3%;
+        margin-top: 0%;
+        margin-bottom: 10%;
+    }
+    
+}
+/*Work section */
+@media only screen and (max-width: 600px) {
+    h2 {
+        margin: unset;
+        margin-top: 10%;
+        margin-bottom: 3%;
+        margin-left: 10%;
+        font-size:160%;
+
+      }
+    h3 {
+        text-align: center;
+        font-size:70%;
+      }
+    .parentContainer {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0%;
+    }
+    .flexChild {
+        margin: unset;
+        justify-content: center;
+        display: flex-column;
+        width: 80%;
+    }
+}
+/*Skill section */
+@media only screen and (max-width: 600px) {
+    .skillsRectangles {
+        margin: none;
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .containerGrid {
+      margin:unset;
+      width: 80%;
+      padding-left: 2%;
+      padding-right: 2%;
+      justify-content: center;
+      grid-template-rows: 130px 130px 130px 130px;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas:
+        "reliable figma illustrator"
+        "helpful french organized"
+        "trello spanish english"
+        "creative miro efficient"
+        ;
+    } 
+    .circle {
+       width: 90px;
+       height: 90px;
+       line-height: 90px;
+       font-size: 110%;
+       padding:5px;
+       margin: 10%;
+
+      }
+    .rectangle {
+      margin-top: 10%;
+      margin-bottom: 10%;
+      display: flex-row;
+      font-size:110%;
+      width: 25%;
+      height: 4px;
+      padding-bottom: 4.5%;
+      }
+}
+
+/*footer section */
+@media only screen and (max-width: 600px) {
+    .footerBlock {
+        display: inline-flex;
+        justify-content: center;
+        padding: 3%;
+    }
+}
+

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="index.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <body>
+
+<!--PRELOADER-->
+<div class="preloader">
+    <img class="loading" src="loading.png">
+</div>
+
+<!--NAVIGATION-->
+<header class="navigation">
+    <div class="logoMenu">
+        <img class=logo src="Property 1=Default.png">
+    </div>
+
+    <nav class="inline-block">
+        <div class="container">
+          <ul>
+            <li class="workNav"> <a href="#">Work </a>
+                <ul class="submenuBlue">
+                  <li ><a href="#" class="tittle">Coats for Colorado</a></li>
+                  <li><a href="#" class="tittle">Sub'Eats</a></li>
+                  <li><a href="#" class="tittle">Travelise</a></li>
+                </ul>
+              </li>
+            <li class="aboutNav"> <a href="#">About </a>
+              <ul class="submenuPink">
+                <li><a href="#" class="tittle">Background</a></li>
+                <li><a href="#" class="tittle">Sketches</a></li>
+                <li><a href="#" class="tittle">Photography</a></li>
+              </ul>
+            </li>
+            <li class="resumeNav"> <a href="#">Resume </a>
+                <ul class="submenuYellow">
+                  <li><a href="#" class="tittle">Experience</a></li>
+                  <li><a href="#" class="tittle">Education</a></li>
+                  <li><a href="#" class="tittle">Skills</a></li>
+                </ul>
+              </li>
+            <li class="contactNav"><a href="#">Contact</a>
+                <ul class="submenuDarkpink">
+                    <li><a href="#" class="tittle">Phone</a></li>
+                    <li><a href="#" class="tittle">Email</a></li>
+                  </ul>
+                </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+<section class="heroImg">
+    <div class="content">
+        <img class="right" src="Mountains.png" width="800px" >
+        <h1>Hi, I'm Colette!</h1>
+        <p class="heroText">A french UX/UI Designer based in Denver.</p>
+        <button class="download">Download Resume</button>
+     </div>
+</section>   
+
+
+<!--WORK SECTION-->
+        <section>
+            <h2>WORK</h2>
+
+            <div class="parentContainer">
+                <div class="flexChild">
+                    <div class="card">
+                        <h3>Coats for Colorado</h3>
+                        <img class="workPictures" src="Cfc pic.png" >
+                    </div>
+                </div>
+
+                <div class="flexChild"> 
+                    <div class="card">
+                        <h3>Sub'Eats</h3>
+                        <img class="workPictures" src="Sub'Eats pic.png" >
+                    </div> 
+                </div> 
+            </div> 
+
+            <div class="parentContainer">
+                <div class="flexChild">
+                    <div class="card">
+                        <h3>Department of Energy</h3>
+                        <img class="workPictures" src="doe pic.png">
+                    </div>
+                </div>
+
+                <div class="flexChild">
+                    <div class="card">
+                        <h3>Travelise</h3>
+                        <img class="workPictures" src="travelise pic.png" >
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+<!--SKILL SECTION-->
+   <section class="skillsSection">
+        <h2>MY SKILLS</h2>
+        <div class="skillsRectangles">
+           <div class="rectangle recSoftware">Softwares</div>
+           <div class="rectangle recSoftskills">Soft skills</div>
+           <div class="rectangle recLanguage">Languages</div>
+        </div>
+
+        <div class="containerGrid">
+            <div id="reliable"><div class="circle softskills">reliable</div></div>
+            <div id="figma"><div class="circle software">figma</div></div>
+            <div id="illustrator"><div class="circle software">illustrator</div></div>
+            <div id="helpful"><div class="circle softskills">helpful</div></div>
+            <div id="french"><div class="circle language">french</div></div>
+            <div id="organized"><div class="circle softskills">organized</div></div>
+            <div id="trello"><div class="circle software">trello</div></div>
+            <div id="spanish"><div class="circle language">spanish</div></div>
+            <div id="efficient"><div class="circle softskills">efficient</div></div>
+            <div id="english"><div class="circle language">english</div></div>
+            <div id="creative"><div class="circle softskills">creative</div></div>
+            <div id="miro"><div class="circle software">miro</div></div>
+        </div>
+   </section>
+
+<!--FOOTER-->
+    <footer>
+        <section>
+            <div class="social">
+                <div class="footerBlock">
+                    <img src="linkedin.png" width="40px">
+                </div>
+                <div class="footerBlock">
+                    <img src="gmail.png" width="40px">
+                </div>
+            </div>
+        </section>
+    </footer>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="js/index.js"></script>
+
+
+    </body>
+</html>
