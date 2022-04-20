@@ -1,8 +1,3 @@
-function fade() {
-    $(".preloader").fadeOut("slow");
-}
-    setTimeout(fade, 3000);
-
 
 $('nav li').hover(
     function() {

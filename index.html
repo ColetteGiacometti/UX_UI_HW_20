@@ -8,129 +8,585 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
     <body>
-
-<!--PRELOADER-->
-<div class="preloader">
-    <img class="loading" src="loading.png">
-</div>
-
 <!--NAVIGATION-->
-<header class="navigation">
-    <div class="logoMenu">
-        <img class=logo src="Property 1=Default.png">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light customNav">
+            <div class="navbar-brand"><img src="Property 1=Default.png"></div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Empathize</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Define</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Ideate</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Prototype</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Test</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">High-Fidelity</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+    <!-- End navigation bar -->
+    <section class="docTitle">
+        <h1>Department of Energy</h1>
+        <div>
+          <div class="icon2022">
+            <img src="2022 icon.png" width='50px';>
+          </div>
+          <div>
+            <h4>Responsive Web Design (RWD), Individual Project</h4>
+          </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="clickablePrototype">
+            <img  src="prototype click.png" width="700">
+        </div>
+    </section>
+
+    <section>
+    <h2>Project Overview</h2>
+    <div class="container-fluid projectOverview">
+        <div class="row">
+          <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+              <div class="card demo border border-0" style="width: 100%;">
+                <div class="card-body">
+                  <h5 class="card-title">My Role</h5>
+                  <p class="card-text">UX/UI Designer
+                    Research, Information Architecture,<br>
+                    Wireframes and Testings, UI design</p>
+                </div>
+              </div>
+          </div>
+          <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+            <div class="card demo border border-0" style="width: 100%;">
+              <div class="card-body">
+                <h5 class="card-title">Timeline</h5>
+                <p class="card-text">3 weeks</p>
+              </div>
+            </div>
+        </div>
+        <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+            <div class="card demo border border-0" style="width: 100%;">
+              <div class="card-body">
+                <h5 class="card-title">Tools</h5>
+                <p class="card-text">Figma, Miro, Trello</p>
+              </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section>
+    <div class="container-fluid projectOverview2">
+        <div class="row">
+          <div class="cardContainer col-lg-6 col-md-6 col-sm-12">
+              <div class="card demo border border-0" style="width: 32rem;">
+                <div class="card-body">
+                  <h5 class="card-title">The Problem</h5>
+                  <p class="card-text">Although the Department of Energy website looks pretty modern, it is <b>lacking clarity</b> and <b>information organization</b> for users who become quickly <b>lost and frustrated</b> through their journey and leave the website <b>without being able to locate the information they were looking for</b>.</p>
+                </div>
+              </div>
+          </div>
+          <div class="cardContainer col-lg-6 col-md-6 col-sm-12">
+            <div class="card demo border border-0" style="width: 32rem;">
+              <div class="card-body">
+                <h5 class="card-title">The Solution</h5>
+                <p class="card-text"><b>Create a new information architecture and navigation system</b> to make the content accessible to users,  and help them achieving their goal when visiting the Department of Energy website. <b>Create a style guide</b> to help users navigate as easily on the desktop version than on mobile version of the website.</p>
+              </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section >
+        <h2>Design Process</h2>
+        <div class="pictures">
+            <img  src="diagram.png" width="700">
+        </div>
+    </section>
+
+    <section>
+      <div>
+        <div class="icon">
+          <img src="empathize icon.png" width='50px';>
+        </div>
+        <div>
+          <h2>User Persona</h2>
+        </div>
+      </div>
+
+        
+        <h3>Devon Williams, 45</h3>        
+        <div class="card demo border border-0" style="width: 32rem;">
+            <img src="user persona.png" class="card-img-top-user mx-auto" alt="..." width="50%">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="card demo border border-0">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Goals</h5>
+                    <ul class="userResearch">
+                      <li>Going solar</li>
+                      <li>Save money</li>
+                      <li>Save energy</li>
+                      <li> Build a more sustainable future for his children</li>
+                     </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="card demo border border-0">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Pain Points</h5>
+                    <ul class="userResearch">
+                      <li>Difficulty to get an estimation about cost/savings</li>
+                      <li>Difficulty to find info about eligibility</li>
+                      <li>Browsing multiple webpages to get one information</li>
+                     </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <br><br>
+              <p class="userResearchtext">Both Devon and his wife wanting to live a <b>more sustainable life</b>, they decided to start their family in an environment that would provide a ecological lifestyle they could afford and would accommodate this value.<br><br>
+                Settling in sunny Arizona, Devon and his family now have a home they want to set up to be totally powered by solar energy. <br><br>
+              <b>This family needs more information</b> to get started in understanding what kind of investment does it take to capitalize on the solar powered life they look for in Arizona.</p>
+</section>
+
+<section>
+    <h2>Heuristic Evaluation</h2>
+    <div class="pictures">
+    <img src="heuristic evaluation.png" width="900">
+</section>
+
+<section>
+    <h2>Usability Test</h2>
+    <div class="container-fluid usabilityTest">
+        <div class="row">
+          <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+              <div class="card demo border border-0" style="width: 16rem;">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Task 1</h5>
+                  <h6>Find the solar technology office page (SETO) </h6>
+                  <p class="card-text">Its mission is to fund research done on solar technology to be publicly available for people to go to as a resource to learn about how the technology works. 
+                </p>
+                </div>
+              </div>
+          </div>
+          <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+            <div class="card demo border border-0" style="width: 16rem;">
+              <div class="card-body">
+                <h5 class="card-title text-center">Task 2</h5>
+                <h6>Find the homeowners guide about going solar </h6>
+                <p class="card-text">This page brings value to homeowners because it outlines key pieces of information homeowners need and want to know to prepare for solar panel installation.</p>
+              </div>
+            </div>
+        </div>
+        <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+            <div class="card demo border border-0" style="width: 16rem;">
+              <div class="card-body">
+                <h5 class="card-title text-center">Task 3</h5>
+                <h6> Find the "Homeowner’s Guide to the Federal Tax Credit for Solar Photovoltaics" </h6>
+                <p class="card-text">This page is a resources for people to be able to learn from and understand federal credits, guidelines and subsidies for solar investments. 
+                </p>
+              </div>
+            </div>
+        </div>
     </div>
 
-    <nav class="inline-block">
-        <div class="container">
-          <ul>
-            <li class="workNav"> <a href="#">Work </a>
-                <ul class="submenuBlue">
-                  <li ><a href="#" class="tittle">Coats for Colorado</a></li>
-                  <li><a href="#" class="tittle">Sub'Eats</a></li>
-                  <li><a href="#" class="tittle">Travelise</a></li>
-                </ul>
-              </li>
-            <li class="aboutNav"> <a href="#">About </a>
-              <ul class="submenuPink">
-                <li><a href="#" class="tittle">Background</a></li>
-                <li><a href="#" class="tittle">Sketches</a></li>
-                <li><a href="#" class="tittle">Photography</a></li>
-              </ul>
-            </li>
-            <li class="resumeNav"> <a href="#">Resume </a>
-                <ul class="submenuYellow">
-                  <li><a href="#" class="tittle">Experience</a></li>
-                  <li><a href="#" class="tittle">Education</a></li>
-                  <li><a href="#" class="tittle">Skills</a></li>
-                </ul>
-              </li>
-            <li class="contactNav"><a href="#">Contact</a>
-                <ul class="submenuDarkpink">
-                    <li><a href="#" class="tittle">Phone</a></li>
-                    <li><a href="#" class="tittle">Email</a></li>
-                  </ul>
-                </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
 
-<section class="heroImg">
-    <div class="content">
-        <img class="right" src="Mountains.png" width="800px" >
-        <h1>Hi, I'm Colette!</h1>
-        <p class="heroText">A french UX/UI Designer based in Denver.</p>
-        <button class="download">Download Resume</button>
-     </div>
-</section>   
-
-
-<!--WORK SECTION-->
-        <section>
-            <h2>WORK</h2>
-
-            <div class="parentContainer">
-                <div class="flexChild">
-                    <div class="card">
-                        <h3>Coats for Colorado</h3>
-                        <img class="workPictures" src="Cfc pic.png" >
-                    </div>
-                </div>
-
-                <div class="flexChild"> 
-                    <div class="card">
-                        <h3>Sub'Eats</h3>
-                        <img class="workPictures" src="Sub'Eats pic.png" >
-                    </div> 
-                </div> 
-            </div> 
-
-            <div class="parentContainer">
-                <div class="flexChild">
-                    <div class="card">
-                        <h3>Department of Energy</h3>
-                        <img class="workPictures" src="doe pic.png">
-                    </div>
-                </div>
-
-                <div class="flexChild">
-                    <div class="card">
-                        <h3>Travelise</h3>
-                        <img class="workPictures" src="travelise pic.png" >
-                    </div>
-                </div>
-
+    <h3>User test analysis</h3>
+    <div class="usertestAnalysis">
+    <div class="card demo border border-0 mb-3" style="max-width: 1400px;">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="user test analysis.png" class="card-img usertestPic" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <p class="card-text usertesttext">We tested 5 users to better determine what their difficulties would be in finding information about going solar and the money they could save.<span style="vertical-align:-70%">&nbsp;</span><br/> 
+              <b>A convoluted path</b> to find information, <b>links hard to locate</b>: our users became <b>frustrated quickly</b> with their ability to find the right information about going solar.<span style="vertical-align:-70%">&nbsp;</span><br/>  
+                The <b>technical wording of categories</b> and sections of the website made this process even more overwhelming for our users, making it difficult for them to <b>remember their path</b> and the task to be performed.</p>
             </div>
-        </section>
-
-<!--SKILL SECTION-->
-   <section class="skillsSection">
-        <h2>MY SKILLS</h2>
-        <div class="skillsRectangles">
-           <div class="rectangle recSoftware">Softwares</div>
-           <div class="rectangle recSoftskills">Soft skills</div>
-           <div class="rectangle recLanguage">Languages</div>
+          </div>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-        <div class="containerGrid">
-            <div id="reliable"><div class="circle softskills">reliable</div></div>
-            <div id="figma"><div class="circle software">figma</div></div>
-            <div id="illustrator"><div class="circle software">illustrator</div></div>
-            <div id="helpful"><div class="circle softskills">helpful</div></div>
-            <div id="french"><div class="circle language">french</div></div>
-            <div id="organized"><div class="circle softskills">organized</div></div>
-            <div id="trello"><div class="circle software">trello</div></div>
-            <div id="spanish"><div class="circle language">spanish</div></div>
-            <div id="efficient"><div class="circle softskills">efficient</div></div>
-            <div id="english"><div class="circle language">english</div></div>
-            <div id="creative"><div class="circle softskills">creative</div></div>
-            <div id="miro"><div class="circle software">miro</div></div>
+
+      <h3>Key Insights received from the Usability Test</h3>
+      <div class="container-fluid key-insights">
+        <div class="row">
+          <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+            <div class="card demo border border-0" style="width: 18rem;">
+              <img src="user 1 pic.png" class="card-img-top mx-auto" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">User 1</h5>
+                <p class="card-text">“I didn’t see the initial header with the navigation options on it. After perusing the page I had to come back up and found it.”</p>
+              </div>
+            </div>
+          </div>
+          <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+            <div class="card demo border border-0" style="width: 18rem;">
+            <img src="user 2 pic.png" class="card-img-top mx-auto" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">User 2</h5>
+              <p class="card-text">“It was not clear to me that by clicking on this link I would access to the information I was looking for. The label was confusing to me.” </p>
+            </div>
+          </div>
         </div>
-   </section>
+          <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+            <div class="card demo border border-0" style="width: 18rem;">
+            <img src="user 3 pic.png" class="card-img-top mx-auto" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">User 3</h5>
+              <p class="card-text">“Why is the SETO placed all the way at the bottom of the ‘Solar’ Page? It makes it very hard to find.” </p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+</section>
+
+<section>
+  <div>
+    <div class="icon">
+      <img src="define icon.png" width='50px';>
+    </div>
+    <div>
+      <h2>Navigability Analysis</h2>
+    </div>
+  </div>
+
+    <div class="container-fluid">
+        <div class="row navigabilityAnalysis">
+          <div class="cardContainer col-lg-3 col-md-3 col-sm-12">
+            <div class="card demo border border-0" style="width: 14rem;">
+              <div class="card-body">
+                <h5 class="card-title">Findability Issues</h5>
+                <p class="card-text">It is hard to locate information </p>
+              </div>
+            </div>
+          </div>
+          <div class="cardContainer col-lg-3 col-md-3 col-sm-12">
+            <div class="card demo border border-0" style="width: 14rem;">
+            <div class="card-body">
+              <h5 class="card-title">Usability Issues</h5>
+              <p class="card-text">It is hard to achieve a goal. It is frustrating to perform tasks
+            </p>
+            </div>
+          </div>
+        </div>
+          <div class="cardContainer col-lg-3 col-md-3 col-sm-12">
+            <div class="card demo border border-0" style="width: 14rem;">
+            <div class="card-body">
+              <h5 class="card-title">Confusing Labels</h5>
+              <p class="card-text">The label sometimes does not reflects the content, or is too technical to be understood by users
+            </p>
+            </div>
+          </div>
+        </div>
+          <div class="cardContainer col-lg-3 col-md-3 col-sm-12">
+            <div class="card demo border border-0" style="width: 14rem;">
+            <div class="card-body">
+              <h5 class="card-title">Too much information</h5>
+              <p class="card-text">This leads the users to scroll excessively down, making it harder to find any relevant information
+            </p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="pictures">
+        <img class="navigabilityAnalysis" src="navigability analysis.png" width="700">
+    </div>
+    </section>
+
+    <h3>Navigation test analysis</h3>
+
+    <p class="navigabilityAnalysis">Our users became quickly frustrated when navigating on the government website. From multiple paths available to links located in technical labeled categories, the process of getting information seemed overwhelming.
+      <span style="vertical-align:-70%">&nbsp;</span><br/> 
+    Here are the major issues our users encountered when navigating on the Energy.gov:</p>
+    <ul class="navigabilityAnalysis">
+        <li>Drop down menus are confusing because text and arrows are leading to different webpages</li>
+        <li>Users do not remember their paths</li>
+        <li>They feel lucky and relieved to find the information but do not understand how they landed on the right webpage</li>
+        <li>Mobile navigation is even more confusing than the desktop navigation</li>
+    </ul>
+    <p class="navigabilityAnalysis">Even when on the right webpage, it takes time to users to locate the information they were looking for: because of the layout and the technical labels.</p>
+</section>
+
+<section>
+  <div>
+    <div class="icon">
+      <img src="ideate icon.png" width='50px';>
+    </div>
+    <div>
+      <h2>Card Sorting</h2>
+    </div>
+  </div>
+
+        <p class="cardSorting">When listing the content of the Department of Energy website, I found a lot of duplicates. I also found information that was not directly related to  the category it was contained in.<span style="vertical-align:-70%">&nbsp;</span><br/> 
+        The open card sorting was crucial to untangle this complex site map and generate ideas for how to structure and label the website information.</p>
+        <div class="pictures">
+            <img class="cardSorting mx-auto" src="card sorting.png" width="800">
+        </div>
+    </div>
+</section>
+
+<section>
+    <div>
+        <h2>Site Mapping</h2>
+        <p class="siteMapping">To create a new sitemap, 
+            I focused on the results of the card sorting and the categories of users identified to offer them a more direct approach and make information more accessible.</p>
+        <h3>Categories of users identified</h3>
+        <div class="container-fluid siteMapping">
+            <div class="row">
+              <div class="cardContainer col-lg-2 col-md-2 col-sm-12">
+                <div class="card demo border border-0" style="width: 8rem;">
+                  <img src="cat1.png" class="card-img-top mx-auto" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Category #1</h5>
+                    <h6 class="card-subtitle text-center">Learn about Energy</h6>
+                    <br>
+                    <p class="card-text">For users looking for general information about Energy</p>
+                  </div>
+                </div>
+              </div>
+              <div class="cardContainer col-lg-2 col-md-2 col-sm-12">
+                <div class="card demo border border-0" style="width: 8rem;">
+                <img src="cat2.png" class="card-img-top mx-auto" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Category #2</h5>
+                  <h6 class="card-subtitle text-center">Homeowners</h6>
+                  <br>
+                  <p class="card-text"> Great tools are available to homeowners, from going solar to improve their homes to save energy and save money
+                </p>
+                </div>
+              </div>
+            </div>
+              <div class="cardContainer col-lg-2 col-md-2 col-sm-12">
+                <div class="card demo border border-0" style="width: 8rem;">
+                <img src="cat3.png" class="card-img-top mx-auto" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Category #3</h5>
+                  <h6 class="card-subtitle text-center">Businesses</h6>
+                  <br>
+                  <p class="card-text">Great tools are also available to Businesses to save energy or find business opportunities with the DoE
+                </p>
+                </div>
+            </div>
+        </div>
+                <div class="cardContainer col-lg-2 col-md-2 col-sm-12">
+                    <div class="card demo border border-0" style="width: 8rem;">
+                    <img src="cat4.png" class="card-img-top mx-auto" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Category #4</h5>
+                      <h6 class="card-subtitle text-center">News</h6>
+                      <br>
+                      <p class="card-text">Having a dedicated section to news will help to keep the other sections focused on their content </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="cardContainer col-lg-2 col-md-2 col-sm-12">
+                    <div class="card demo border border-0" style="width: 8rem;">
+                    <img src="CAT5.png" class="card-img-top mx-auto" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Category #5</h5>
+                        <h6 class="card-subtitle text-center">Offices & Labs</h6>
+                        <br>
+                        <p class="card-text">These structures are contributing to the DoE action and the users can find a lot of information related to them on Energy.gov
+
+                        </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="cardContainer col-lg-2 col-md-2 col-sm-12">
+                    <div class="card demo border border-0" style="width: 8rem;">
+                    <img src="cat6.png" class="card-img-top mx-auto" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Category #6</h5>
+                      <h6 class="card-subtitle text-center">Career</h6>
+                      <br>
+                      <p class="card-text">For potential applicants, very important category as the DoE is now hiring</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <section>
+              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="sitemap1.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="sitemap2.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+          </section>
+
+</section>
+
+
+<section>
+  <div>
+    <div class="icon">
+      <img src="prototype icon.png" width='50px';>
+    </div>
+    <div>
+      <h2>Low Fidelity Prototype</h2>
+    </div>
+  </div>
+
+        <h3>Desktop Version</h3>
+        <div class="pictures">
+            <img src="prototype lofi desktop.png" width="700">
+        </div>
+        <h3>Mobile Version</h3>
+        <div class="pictures navbarMobile">
+            <img src="navbar mobile lofi.png" width="400">
+        </div>
+        <br>
+        <div class="pictures">
+            <img src="mobile accordion lofi.png" width="400">
+        </div>
+    </div>
+</section>
+
+<section>
+  <div>
+    <div class="icon">
+      <img src="test icon.png" width='50px';>
+    </div>
+    <div>
+      <h2>Usability Testing</h2>
+    </div>
+  </div>
+
+        <p class="usabilityTesting">In order to <b>improve the homepage and navigation</b> of the Department of Energy website, I organized a <b>user test with 10 participants</b>.<br> 
+            that users <b>know where they would need to click</b> or tap to find the relevant information to them. It was also to make sure that they <b>can access the relevant information</b> thanks to the navigation and homepage content<br>
+            Users have been asked to:</p>
+            <ul class="usabilityTesting">
+                <li>To <b>navigate through the homepage</b></li>
+                <li>Try the <b>drop down menus, hover</b> over and click on the buttons </li>
+                <li>To get their <b>general impression</b> about the homepage and navigation, and if they would know where to go to find information about going solar</li>
+            </ul>
+            <p class="usabilityTesting">I wanted to find out if the users <b>could perform the test tasks, how quickly</b> they could perform the them and <b>how they felt</b> while performing the test.
+            <br>
+            The <b>overall impression</b> I got from my user tests was that the information is organized clearly, and that it was easy for them to know where to find information.
+            <br>
+            I received extremely valuable feedbacks that allowed me to improve the homepage and navigation bar:</p>
+    </div>
+
+    <div>
+        <h3>Results of usability testing</h3>
+        <div class="pictures">
+            <img src="results usability testing.png" width="500">
+        </div>
+    </div>
+</section>
+
+<section>
+    <div>
+        <h2>Moodboard</h2>
+        <div class="pictures">
+            <img src="moodboard.png" width="700">
+        </div>
+    </div>
+</section>
+
+<section>
+  <h2>Style Guide</h2>
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="style guide1.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="style guide2.png" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</section>
+
+<section>
+    <div>
+        <h2>High Fidelity Prototype</h2>
+        <div class="pictures">
+            <img class="pictureHifi" src="hifi prototype.png" width="600">
+        </div>
+    </div>
+</section>
+
+<section>
+    <div>
+      <div class="clickablePrototypeEnd">
+        <h2>Clickable Prototype</h2>
+        <div class="clickablePrototypePic">
+          <img src="prototype click.png" width="700">
+        </div>
+      </div>
+    </div>
+</section>
+
+<section>
+    <div>
+        <h2>Key Takeaways</h2>
+        <p class="keyTakeaways"><b>Contacting users and other designers</b> to organize tests and work sessions has been <b>extremely valuable</b> during this project. Collaborating not only allowed me to get <b>important feedbacks</b> and advices but also allowed me to work more effectively while working with a time constraint.
+            <br><br>
+            I found it extremely challenging to <b>move on with assumptions</b> about the use of a website. I wish more statistics and information about the use of the Department of Energy website were available to guide me through the process of identifying users. <b>Gathering statistics and information</b> about the dynamic solar energy market as been crucial to cope with this constraint, and allowed us to move on with a thorough and documented user scenario.
+            <br><br>
+            It also has been a real challenge to work on a specific website like the Department of Energy website. Information about energy is abundant and very technical. I read and learnt a lot about energy in order to be able to regroup categories and eliminate duplicates, and get to this new information architecture.
+            <br><br>
+        </p>
+    </div>
+</section>
 
 <!--FOOTER-->
     <footer>
@@ -150,7 +606,6 @@
 
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
         <script src="js/index.js"></script>
-
-
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>
 </html>
